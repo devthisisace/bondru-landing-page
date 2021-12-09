@@ -2,7 +2,6 @@
 @import "styles.css";
 @import "footer.css";
 @import "responsive.css";
-@import "scroll_top.css";
 
 /* importing FontAwesome */
 @import "../assets/all.css";
@@ -67,6 +66,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 img {
