@@ -33,34 +33,68 @@ i:before {
 }
 
 main {
-  padding: 15px;
-  height: 100vh;
+  padding: 50px 55px;
+
+  max-width: 2880px;
+  max-height: 1800px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  position: relative;
+
+  background-image: url("../img/bondru-logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h3.title-top {
+  color: var(--clr-light);
+  align-self: flex-start;
+  font-weight: 500;
   text-transform: uppercase;
+  position: relative;
+}
+
+h3.title-top:before {
+  content: '';
+  background-color: white;
+  width: 50px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
 }
 
 h1.main-title {
-  text-align: center;
-  font-weight: normal;
-}
-
-.main-subtitle-content {
-  display: flex;
-  margin-top: 80px;
-}
-
-.main-subtitle-item {
-  margin: 0 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-subtitle-item span {
+  text-transform: uppercase;
   color: var(--clr-light);
+  font-size: 140px;
+  font-weight: 900;
+  margin-top: 60px;
+}
+
+h3.main-subtitle {
+  color: #e186f6;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 40px 0 20px 0;
+}
+
+#main-content p {
+  color: var(--clr-light);
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 1.1;
+  max-width: 580px;
+  text-align: center;
+}
+
+a.logo-link {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
